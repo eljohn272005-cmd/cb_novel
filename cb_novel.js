@@ -67,12 +67,13 @@ const story = {
 
     p5: {
         text: () => `${getCharacterName()} follows the reflection deeper, their own footsteps echoing alongside its mockery.<br><br>
-        The path winds and twists until—impossibly—they emerge back at the starting corridor.<br><br>
-        The reflection bows, vanishing with a hiss.<br><br>
-        The maze mocks them. They are trapped in the cycle.`,
-        choices: [
-            { text: "Choose again", next: "start" }
-        ]
+    The path winds and twists until—impossibly—they emerge into a vast chamber tiled like a checkerboard.<br><br>
+    The reflection bows, vanishing with a hiss.<br><br>
+    The maze mocks them. They are trapped in the cycle… or perhaps not.`,
+    choices: [
+        { text: "Step onto the tiles", next: "p6" }, 
+        { text: "Retreat in fear", next: "p7" } 
+    ]
     },
 
     p6: {
@@ -1068,5 +1069,6 @@ function showNode(nodeKey) {
         btn2.style.display = "none";
     }
 }
+
 
 showNode("start");
