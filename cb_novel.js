@@ -103,7 +103,7 @@ const story = {
         Tears of relief well up—until the meadow peels away like old wallpaper, revealing endless stone walls again.<br><br>
         It was all a cruel illusion. They are back where they began.`,
         choices: [
-            { text: "Choose again", next: "start" }
+            { text: "Choose again", next: "p10" }
         ]
     },
 
@@ -124,7 +124,7 @@ const story = {
         *"Only one path leads forward. Choose carefully."*<br><br>
         Two archways open ahead.`,
         choices: [
-            { text: "Take the left archway", next: "p6" },
+            { text: "Take the left archway", next: "p12" },
             { text: "Take the right archway", next: "p11" }
         ]
     },
@@ -164,7 +164,7 @@ const story = {
         ${getCharacterName()} chokes, clawing at their throat, but the mist consumes them entirely.<br><br>
         When it clears, they are standing once again at the maze’s starting point.`,
         choices: [
-            { text: "Choose again", next: "start" }
+            { text: "Choose again", next: "p19" }
         ]
     },
     
@@ -203,7 +203,7 @@ const story = {
         Exhaustion overtakes them as the green flames dim…<br><br>
         When they awaken, they are once again in the maze’s starting chamber.`,
         choices: [
-            { text: "Try again", next: "start" }
+            { text: "Try again", next: "p12" }
         ]
     },
     
@@ -1072,3 +1072,4 @@ function showNode(nodeKey) {
 
 
 showNode("start");
+
