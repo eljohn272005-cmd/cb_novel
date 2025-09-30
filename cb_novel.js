@@ -1024,7 +1024,7 @@ const story = {
     },
 
     gameover: {
-        text: () => `Such an unfortunate end for ${getCharacterName() - 1}...<br><br>
+        text: () => `Such an unfortunate end for E-${deathCount - 1}...<br><br>
         The maze claims another soul.`,
         choices: [
             { text: "Restart", next: "start" }
@@ -1072,5 +1072,6 @@ function showNode(nodeKey) {
 
 
 showNode("start");
+
 
 
